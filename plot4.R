@@ -51,7 +51,7 @@ par(mfrow = c(2, 2))
 
 ## PLOT 1 : lines graph of GlobalActivePower over time
 plot(data2$datetime, data2$global_active_power, type = "l",
-     ylab = "Global Active Power (kilowatts)", xlab = "")
+     ylab = "Global Active Power", xlab = "")
 
 ## PLOT 2 : voltage over time
 plot(data2$datetime, data2$voltage, type = "l",
