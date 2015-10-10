@@ -49,8 +49,9 @@ data2 <- tbl_df(data1) %>%
 png(filename = "plot2.png")
 
 # lines graph of GlobalActivePower over time
+par(mar = c(3, 5, 4, 2) + 0.1)
 plot(data2$datetime, data2$global_active_power, type = "l",
-     ylab = "Global Active Power (kilowatts)", xlab = "")
+     ylab = "Global Active Power (kilowatts)")
                 # Day names resulted in spanish for me,
                 # because of my locale.
 
